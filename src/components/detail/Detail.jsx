@@ -69,7 +69,7 @@ const Detail = () => {
                 />
                 <span>photo_2024_2.png</span>
               </div>
-              <img src="./download.png" alt="" className="icon" />
+              <img src="./download.png" alt="" className="icons" />
             </div>
             <div className="photoItem">
               <div className="photoDetail">
@@ -79,7 +79,7 @@ const Detail = () => {
                 />
                 <span>photo_2024_2.png</span>
               </div>
-              <img src="./download.png" alt="" className="icon" />
+              <img src="./download.png" alt="" className="icons" />
             </div>
             <div className="photoItem">
               <div className="photoDetail">
@@ -89,7 +89,7 @@ const Detail = () => {
                 />
                 <span>photo_2024_2.png</span>
               </div>
-              <img src="./download.png" alt="" className="icon" />
+              <img src="./download.png" alt="" className="icons" />
             </div>
             <div className="photoItem">
               <div className="photoDetail">
@@ -99,7 +99,7 @@ const Detail = () => {
                 />
                 <span>photo_2024_2.png</span>
               </div>
-              <img src="./download.png" alt="" className="icon" />
+              <img src="./download.png" alt="" className="icons" />
             </div>
           </div>
         </div>
@@ -116,7 +116,7 @@ const Detail = () => {
             ? "User blocked"
             : "Block User"}
         </button>
-        <button className="logout" onClick={handleLogout}>
+        <button className="logOut" onClick={handleLogout}>
           Logout
         </button>
       </div>
@@ -125,3 +125,5 @@ const Detail = () => {
 };
 
 export default Detail;
+
+

@@ -1,73 +1,97 @@
-.chatList {
-  flex: 1;
-  overflow: scroll;
-  .search {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
+.chatlist::-webkit-scrollbar {
+  width: 8px; /* Adjust scrollbar width */
+}
 
-    .searchBar {
-      flex: 1;
-      background-color: rgba(17, 25, 40, 0.5);
+/* Track (background) */
+.chatlist::-webkit-scrollbar-track {
+  background: transparent; /* Track color */
+  border-radius: 5px; /* Optional: Rounded corners */
+}
+.chatlist::-webkit-scrollbar-thumb {
+  background-color: #1f3d60; 
+  border-radius: 5px; 
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+
+.chatlist{
+  flex: 1;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  .search{
       display: flex;
       align-items: center;
+      padding: 20px;
       gap: 20px;
-      border-radius: 10px;
-      padding: 10px;
 
-      input {
-        background-color: transparent;
-        border: none;
-        outline: none;
-        color: white;
-        flex: 1;
+      .searchBar{
+          flex:1;
+          background-color: rgba(46, 32, 77, 0.577);
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          padding: 5px;
+
+          input{
+               background-color: transparent;
+               border: none;
+               outline: none;
+               color: white;
+               flex: 1;
+
+          }
+
+          img{
+              width: 30px;
+              height: 30px;
+          }
       }
-
-      img {
-        width: 20px;
-        height: 20px;
+      .add{
+          width: 35px;
+          height: 35px;
+          cursor: pointer;
+          background-color: rgba(46, 32, 77, 0.577);
+          padding: 10px;
+          border-radius: 5px;
       }
-    }
-
-    .add {
-      width: 36px;
-      height: 36px;
-      background-color: rgba(17, 25, 40, 0.5);
-      padding: 10px;
-      border-radius: 10px;
-      cursor: pointer;
-    }
   }
 
-  .item {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-    cursor: pointer;
-    border-bottom: 1px solid #dddddd35;
-
-    img {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-
-    .texts {
+  .item{
       display: flex;
-      flex-direction: column;
-      gap: 10px;
+      align-items: center;
+      
+      gap: 15px;
+      padding: 15px 20px 15px 20px;
+      cursor: pointer;
+      border-bottom: 1px solid #dddddd35;
+      
 
-      span {
-        font-weight: 500;
+      img{
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          object-fit: cover;
       }
 
-      p {
-        font-size: 14px;
-        font-weight: 300;
+      .texts{
+          display: flex;
+          flex-direction: column;
+          gap: 3px;
+          
+
+          
+          span{
+              font-weight: 300;
+              font-size: 15px;
+          }
+
+          p{
+              font-size: 14px;
+              font-weight:100;
+              color: rgb(179, 179, 179);
+          }
       }
-    }
   }
 }

@@ -69,7 +69,7 @@ const ChatList = () => {
   );
 
   return (
-    <div className="chatList">
+    <div className="chatlist">
       <div className="search">
         <div className="searchBar">
           <img src="./search.png" alt="" />
